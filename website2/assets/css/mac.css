@@ -1,0 +1,297 @@
+html, body{
+    /* background: url('assets/media/wp1b.jpg') no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+    font-family: Quicksand,sans-serif;
+}
+
+.preload{
+    position: absolute;
+    height: 100vh;
+    line-height: 100vh;
+    width: 100vw;
+    background: #000000e0;
+    backdrop-filter: blur(10px);
+    font-weight: lighter;
+    font-size: 20pt;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: all ease 1s;
+    font-family: monospace;
+}
+
+.tab{
+    width: 500px;
+    background: #ececec;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12pt;
+    border-radius: 10px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0 10px #00000020;
+}
+
+.tab .navigate{
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    left: 10px;
+    padding: 0 5px;
+}
+.tab .navigate .merah, .tab .navigate .kuning, .tab .navigate .hijau {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+.tab .navigate .merah{
+    background: #fe5d56;
+    border: 1px solid #ea3e4a;
+}
+.tab .navigate .kuning{
+    background: #f6bd28;
+    border: 1px solid #f8ae1c;
+}
+.tab .navigate .hijau{
+    background: #26cd3c;
+    border: 1px solid #4bba54;
+}
+
+.tab .header{
+    color: #767676;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px 10px 0 0;
+    background: #d1d1d1;
+    background: linear-gradient(0deg,rgba(209,209,209,1) 0,rgba(229,229,232,1) 100%);
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.tab .body{
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.tab .body .title{
+    font-weight: 700;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+.tab .body input{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 7px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid #dcdcdca0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: 0;
+}
+.tab .body video{
+    width: 720px;
+}
+.tab .body .button{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+.tab .body .buttonyes, .tab .body .buttonno{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.tab .body .buttonyes{
+    background: linear-gradient(0deg,rgba(10,107,254,1) 0,rgba(106,163,252,1) 100%);
+    color: #fff;
+    border: 1px solid #015ffc;
+}
+.tab .body .buttonno{
+    background: #fff;
+    border: 1px solid #c6c6c6;
+}
+.tab .body .buttonyes:hover{
+    background: #0a6bfe;
+}
+.tab .body .buttonno:hover{
+    background-color: #c6c6c6;
+}
+
+.tab .footer{
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #767676;
+}
+.tab .footer .shoot{
+   width: 50px;
+   cursor: pointer;
+}
+.tab .footer .buttons.right{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    bottom: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+.tab .footer .buttons.left{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    bottom: 15px;
+    left: 30px;
+    cursor: pointer;
+}
+.tab .footer .button{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.tab .footer .button#esc{
+    background: #fff;
+    border: 1px solid #c6c6c6;
+}
+.tab .footer .button#skip{
+    background: linear-gradient(0deg,rgba(10,107,254,1) 0,rgba(106,163,252,1) 100%);
+    color: #fff;
+    border: 1px solid #015ffc;
+}
+.tab .footer .button#esc:hover{
+    background-color: #c6c6c6;
+}
+.tab .footer .button#skip:hover{
+    background: #0a6bfe;
+}
+
+/* photobooth */
+.photobooth{
+    display: none;
+    width: auto;
+}
+.photobooth .body{
+    padding: 0;
+}
+
+.clock{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40vh;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.clock .buttons{
+    display: block;
+    margin-bottom: 200px;
+}
+.clock .button{
+    color: #fff;
+    background: #00000080;
+    transform: translateY(0);
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 3px 2px;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+.clock .button:hover{
+    background: black;
+}
+.clock .date{
+    /* top: 50vh; */
+}
+.clock .date .jam{
+    position: relative;
+    font-size: 100px;
+    font-weight: 300;
+    color: white;
+}
+.clock .date .tanggal{
+    position: relative;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+}
+.clock .date .ucapan{
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    margin-top: 50px;
+    background: #eaeaea90;
+    left: calc(50% - 220px - 20px);
+    width: 440px;
+    padding: 30px 20px;
+    border-radius: 25px;
+    transition: all ease .3s;
+}
+
+@media screen and (max-width: 720px){
+    .tab {
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .tab .body video{
+        width: 100%;
+    }
+    .tab .footer .button{
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    .clock .buttons{
+        margin-bottom: 100px;
+    }
+    .clock .date .ucapan{
+        width: 80%;
+        font-size: 16px;
+        left: calc(15% - 20px - 19px);
+    }
+}

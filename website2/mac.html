@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin</title>
+	
+	<link rel="icon" href="assets/media/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/mac.css">
+</head>
+<body>
+    <div class="preload">
+        Please wait
+    </div>
+
+    <div class="tab alert">
+        <div class="navigate">
+            <div class="merah"></div>
+            <div class="kuning"></div>
+            <div class="hijau"></div>
+        </div>
+        <div class="header">Input Name</div>
+        <div class="body">
+            <div class="title">Isi nama anda terlebih dahulu</div>
+            <label for="namanya">Nama :</label>
+            <input type="text" id="namanya" name="nama" required />
+            <div class="button">
+                <!-- <div class="buttonno" id="buttonno">engga</div> -->
+                <div class="buttonyes" id="buttonyes">oke</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab photobooth">
+        <div class="navigate">
+            <div class="merah"></div>
+            <div class="kuning"></div>
+            <div class="hijau"></div>
+        </div>
+        <div class="header">Photo Booth</div>
+        <div class="body">
+            <video controls id="video">
+                <source src="assets/media/deathbed.mp4" type="video/mp4" autoplay>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer">
+            <div class="buttons right">
+                <div class="button" id="esc">
+                    esc
+                </div>
+            </div>
+            <div class="buttons left">
+                <div class="button" id="skip">
+                    skip
+                </div>
+            </div>
+            <img src="assets/media/shoot.png" class="shoot" id="shoot" alt="">
+        </div>
+    </div>
+
+    <div class="clock">
+        <div class="buttons">
+            <div class="button" onclick="mainPage()">main page</div>
+            <div class="button" onclick="refreshPage()">reset</div>
+            <div class="button" onclick="toggleFullScreen()">esc</div>
+        </div>
+        <div class="date">
+            <div class="jam" id="jam"></div>
+            <div class="tanggal" id="tanggal"></div>
+            <div class="ucapan" id="ucapan"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/mac.js"></script>
+</body>
+</html>
