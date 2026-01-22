@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kadek Edwin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans">
+    <header class="bg-black shadow-md relative">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">Kadek Edwin</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
+                <li><a href="#projects" class="text-gray-300 hover:text-white">Projects</a></li>
+                <li><a href="#skills" class="text-gray-300 hover:text-white">Skills</a></li>
+                <li><a href="kalkulator.html" class="text-gray-300 hover:text-white">Calculator</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 w-full bg-black shadow-lg">
+                <ul class="flex flex-col space-y-2 px-6 py-4">
+                    <li><a href="#about" class="block text-gray-300 hover:text-white py-2">About</a></li>
+                    <li><a href="#projects" class="block text-gray-300 hover:text-white py-2">Projects</a></li>
+                    <li><a href="#skills" class="block text-gray-300 hover:text-white py-2">Skills</a></li>
+                    <li><a href="kalkulator.html" class="block text-gray-300 hover:text-white py-2">Calculator</a></li>
+                    <li><a href="#contact" class="block text-gray-300 hover:text-white py-2">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-black text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-8">I'm Kadek Edwin, passionate about coding and specializing in Kotlin Multiplatform.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="bg-gray-800 text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-700 transition duration-300 w-full sm:w-auto text-center">Get In Touch</a>
+                <a href="kalkulator.html" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-300 w-full sm:w-auto text-center">
+                    <i class="fas fa-calculator mr-2"></i>Try Calculator
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="./profile.png" alt="Profile Picture" class="rounded-full w-64 h-64 mx-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Hi, I'm Kadek Edwin. I love coding and enjoy working with Kotlin Multiplatform to build cross-platform apps. When I'm not coding, I like hiking and exploring nature.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/kadekedwin" class="text-gray-800 hover:text-black"><i class="fab fa-github text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/kadekedwin" class="text-gray-800 hover:text-black"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="https://x.com/kadekedwin" class="text-gray-800 hover:text-black"><i class="fab fa-twitter text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">My Projects and Adventure</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                        <img src="image1.png" alt="Project 2" class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Portfolio Website</h3>
+                        <p class="text-gray-600 mb-4">A personal portfolio website showcasing my projects and skills.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                        <img src="image2.jpg" alt="Project 1" class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Aksara Bali Adventure Game</h3>
+                        <p class="text-gray-600 mb-4">An Aksara Bali adventure game with simple gameplay and 3D visualization.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+                        <img src="image3.jpg" alt="Project 3" class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Batukaru Hiking</h3>
+                        <p class="text-gray-600 mt-2">Climbing Batukaru Mountain, enjoying the beautiful nature and challenging trails.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fab fa-html5 text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">HTML5</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-css3-alt text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">CSS3</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-js-square text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">JavaScript</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-node-js text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">Node.js</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-python text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">Python</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-android colored text-4xl mb-2"></i>
+                    <p class="text-gray-600">Android</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-app-store-ios colored text-4xl mb-2"></i>
+                    <p class="text-gray-600">iOS</p>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-git-alt text-4xl text-gray-800 mb-2"></i>
+                    <p class="text-gray-600">Git</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Me</h2>
+            <div class="max-w-md mx-auto">
+                <form id="contact-form" class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-800 font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <span id="name-error" class="text-red-500 text-sm hidden">Name is required</span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-800 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <span id="email-error" class="text-red-500 text-sm hidden">Valid email is required</span>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-800 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"></textarea>
+                        <span id="message-error" class="text-red-500 text-sm hidden">Message is required</span>
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-300">Send Message</button>
+                    <div id="form-success" class="hidden mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Kadek Edwin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#mobile-menu-btn').click(function() {
+                $('#mobile-menu').toggleClass('hidden');
+            });
+
+            $('a[href^="#"]').click(function(e) {
+                e.preventDefault();
+                const target = $($(this).attr('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                    $('#mobile-menu').addClass('hidden');
+                }
+            });
+
+            $('#contact-form').submit(function(e) {
+                e.preventDefault();
+                
+                $('.text-red-500').addClass('hidden');
+                let isValid = true;
+
+                if ($('#name').val().trim() === '') {
+                    $('#name-error').removeClass('hidden');
+                    isValid = false;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test($('#email').val().trim())) {
+                    $('#email-error').removeClass('hidden');
+                    isValid = false;
+                }
+
+                if ($('#message').val().trim() === '') {
+                    $('#message-error').removeClass('hidden');
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    $('#form-success').removeClass('hidden');
+                    this.reset();
+                    setTimeout(function() {
+                        $('#form-success').addClass('hidden');
+                    }, 5000);
+                }
+            });
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        $(entry.target).css({
+                            'opacity': '1',
+                            'transform': 'translateY(0)'
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            $('section').each(function() {
+                $(this).css({
+                    'opacity': '0',
+                    'transform': 'translateY(30px)',
+                    'transition': 'opacity 0.6s ease, transform 0.6s ease'
+                });
+                observer.observe(this);
+            });
+
+            const $heroText = $('#hero p');
+            const text = $heroText.text();
+            $heroText.text('');
+
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    $heroText.text($heroText.text() + text.charAt(i));
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            }
+
+            setTimeout(typeWriter, 1000);
+
+            const skillsObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        $('#skills .text-center').each(function(index) {
+                            const $item = $(this);
+                            setTimeout(function() {
+                                $item.css({
+                                    'opacity': '1',
+                                    'transform': 'scale(1)'
+                                });
+                            }, index * 100);
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            $('#skills .text-center').css({
+                'opacity': '0',
+                'transform': 'scale(0.8)',
+                'transition': 'opacity 0.5s ease, transform 0.5s ease'
+            });
+
+            skillsObserver.observe($('#skills')[0]);
+        });
+    </script>
+</body>
+</html>
